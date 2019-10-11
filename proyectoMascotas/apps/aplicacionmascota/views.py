@@ -17,6 +17,6 @@ def crearMascota(request):
     else:
 
         form = Mascotaform()
-    return render(request,'aplicacionmascota/crear_mascota.html',{'form'})
+    return render(request,'aplicacionmascota/crear_mascota.html',{'form':form})
 
 

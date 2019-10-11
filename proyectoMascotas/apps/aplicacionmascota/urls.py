@@ -1,7 +1,12 @@
 from django.conf.urls import url
-#form .views import *
+from .views import *
+from django.db import models
 
-#urlpatterns = [
- #   url(r'^crear_mascota/',crearMascota,name='nueva_Mascota'),
 
-#]
+
+
+urlpatterns = [
+
+    url(r'^$', home, name="Index"),
+    url(r'^crear_mascota/',crearMascota,name="nueva_Mascota"),
+]
